@@ -25,7 +25,7 @@
         },
         mounted() {
             this.axios
-                .get('/products.json')
+                .get('products.json')
                 .then(response => {
                     this.items = response.data.map(item => {
                         item.assocProducts = item.assocProducts.split(' ');
